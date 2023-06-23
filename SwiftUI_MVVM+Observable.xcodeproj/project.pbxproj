@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F7B7B4F02A42D0060094FE3A /* SwiftUI_MVVM_ObservableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7B4EF2A42D0060094FE3A /* SwiftUI_MVVM_ObservableApp.swift */; };
-		F7B7B4F22A42D0060094FE3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7B4F12A42D0060094FE3A /* ContentView.swift */; };
+		F7B7B4F22A42D0060094FE3A /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7B4F12A42D0060094FE3A /* PeopleView.swift */; };
 		F7B7B4F42A42D0080094FE3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7B4F32A42D0080094FE3A /* Assets.xcassets */; };
 		F7B7B4F72A42D0080094FE3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B7B4F62A42D0080094FE3A /* Preview Assets.xcassets */; };
 		F7B7B5012A42D0080094FE3A /* SwiftUI_MVVM_ObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7B5002A42D0080094FE3A /* SwiftUI_MVVM_ObservableTests.swift */; };
 		F7B7B50B2A42D0080094FE3A /* SwiftUI_MVVM_ObservableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7B50A2A42D0080094FE3A /* SwiftUI_MVVM_ObservableUITests.swift */; };
 		F7B7B50D2A42D0080094FE3A /* SwiftUI_MVVM_ObservableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7B50C2A42D0080094FE3A /* SwiftUI_MVVM_ObservableUITestsLaunchTests.swift */; };
+		F7B7B51D2A42D57D0094FE3A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7B51C2A42D57D0094FE3A /* Person.swift */; };
+		F7B7B51F2A42D84B0094FE3A /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7B51E2A42D84B0094FE3A /* PersonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		F7B7B4EC2A42D0060094FE3A /* SwiftUI_MVVM+Observable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI_MVVM+Observable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B7B4EF2A42D0060094FE3A /* SwiftUI_MVVM_ObservableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_ObservableApp.swift; sourceTree = "<group>"; };
-		F7B7B4F12A42D0060094FE3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7B7B4F12A42D0060094FE3A /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		F7B7B4F32A42D0080094FE3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B7B4F62A42D0080094FE3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7B7B4FC2A42D0080094FE3A /* SwiftUI_MVVM+ObservableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI_MVVM+ObservableTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		F7B7B5062A42D0080094FE3A /* SwiftUI_MVVM+ObservableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI_MVVM+ObservableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B7B50A2A42D0080094FE3A /* SwiftUI_MVVM_ObservableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_ObservableUITests.swift; sourceTree = "<group>"; };
 		F7B7B50C2A42D0080094FE3A /* SwiftUI_MVVM_ObservableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_ObservableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7B7B51C2A42D57D0094FE3A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F7B7B51E2A42D84B0094FE3A /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		F7B7B4EE2A42D0060094FE3A /* SwiftUI_MVVM+Observable */ = {
 			isa = PBXGroup;
 			children = (
+				F7B7B5192A42D4CC0094FE3A /* Model */,
+				F7B7B51B2A42D4F20094FE3A /* View */,
+				F7B7B51A2A42D4D50094FE3A /* ViewModel */,
 				F7B7B4EF2A42D0060094FE3A /* SwiftUI_MVVM_ObservableApp.swift */,
-				F7B7B4F12A42D0060094FE3A /* ContentView.swift */,
 				F7B7B4F32A42D0080094FE3A /* Assets.xcassets */,
 				F7B7B4F52A42D0080094FE3A /* Preview Content */,
 			);
@@ -125,6 +131,30 @@
 				F7B7B50C2A42D0080094FE3A /* SwiftUI_MVVM_ObservableUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI_MVVM+ObservableUITests";
+			sourceTree = "<group>";
+		};
+		F7B7B5192A42D4CC0094FE3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7B7B51C2A42D57D0094FE3A /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7B7B51A2A42D4D50094FE3A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F7B7B51E2A42D84B0094FE3A /* PersonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F7B7B51B2A42D4F20094FE3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7B7B4F12A42D0060094FE3A /* PeopleView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B7B4F22A42D0060094FE3A /* ContentView.swift in Sources */,
+				F7B7B51D2A42D57D0094FE3A /* Person.swift in Sources */,
+				F7B7B4F22A42D0060094FE3A /* PeopleView.swift in Sources */,
 				F7B7B4F02A42D0060094FE3A /* SwiftUI_MVVM_ObservableApp.swift in Sources */,
+				F7B7B51F2A42D84B0094FE3A /* PersonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
